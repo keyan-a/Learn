@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 85vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .nav{
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 3vh;
+            /* background-color: rgb(185, 185, 185); */
+        }
+        .frame{
+            width: 73%;
+        }
+        .nav a{
+            width: 80%;
+            padding: 7% 5%;
+            /* background-image: linear-gradient(70deg, darkgrey, lightgrey); */
+            background-color: lightgray;
+            border-radius: 10px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 500ms; 
+            transition-timing-function: ease-out;
+            
+        }
+        .nav a:hover{
+            /* background-image: linear-gradient(70deg, lightgrey, darkgrey); */
+            background-color: darkgray;
+            color: black;
+            border-radius:30px ;
+        }
+        h1{
+            margin-left: 1.5%;
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+            text-align: center;
+            width: 21%;
+            border-radius: 10px;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 1%;
+            background-image: linear-gradient(70deg, darkgrey, lightgrey);
+        }
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div class="container">
+        <div class="nav">
+            <a href="Images/Meteors.png" target="myFrame">Meteors</a>
+            <a href="Images/Planet2.png" target="myFrame">Planet</a>
+            <a href="Images/Ship.png" target="myFrame">Space Ship</a>
+            <a href="Images/Space1.png" target="myFrame">Space</a>
+            <a href="Images/Walk.png" target="myFrame">Space Walk</a>
+        </div>
+        <div class="frame">
+            <iframe src="Images/Walk.png" name="myFrame" frameborder="0" width="100%" height="99%"></iframe>
+        </div>
+    </div>
+</body>
+</html>
